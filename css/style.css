@@ -149,6 +149,12 @@ p {
     border: 2px solid #4E63D4;
     border-radius: 8px;
 }
+.registro:hover {
+    background-color: #4E63D4;
+    border: 2px solid white;
+    color: white;
+    transition: all 300ms ease-out;
+}
 /* Fin header home */
 /* Section Home */
 .fondo-home {
@@ -374,6 +380,12 @@ p {
         width: 64px;
         height: 112px;
     }
+    .button-search:hover {
+        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+        box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+        transform: scale(1.2);
+        transition: all 250ms ease-out;
+    }
 }
 .icono-viajes {
     padding-right: 8px;
@@ -512,6 +524,10 @@ p {
         margin-left: 92px;
         margin-bottom: 24px;
     }
+    .precio:hover {
+        transform: scale(1.5);
+        transition: all 300ms ease-out;
+    }
     .ciudad {
         font-weight: 500;
         font-size: 16px;
@@ -599,6 +615,12 @@ p {
         font-size: 24px;
         width: 214px;
         height: 52px;
+    }
+    .button-ver-mas:hover {
+        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+        box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+        transform: scale(1.2);
+        transition: all 250ms ease-out;
     }
 }
 /* Fin section Excuriones*/
@@ -1135,6 +1157,12 @@ p {
     height: 48px;
     font-weight: 600;
     font-size: 16px;
+}
+.button-promociones:hover {
+    background-color: #4E63D4;
+    border: 2px solid white;
+    color: white;
+    transition: all 300ms ease-out;
 }
 .section-redes {
     width: 372px;
