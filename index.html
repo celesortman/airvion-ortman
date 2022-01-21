@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airvion</title>
+    <link rel="shortcut icon" href="src/assets/img/icon-airvion.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header class="header-contenedor">
+        <nav class="header-items">
+            <a href="./index.html"><img src="src/assets/svg/logo-airvion.svg" alt="airvion-logo"></a>
+                <ul>
+                    <li><a class="inicio" href="./index.html">Inicio</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
+                    <li><a href="#excursiones">Excursiones</a></li>
+                    <li><a href="#sobreNosotros">Sobre nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a class="registro" href="./src/views/registro.html">Registrate</a></li>
+                </ul>
+        </nav>
+        <nav class="menu-desplegable">
+            <input type="checkbox" id="menu" class="input-menu">
+            <label for="menu" class="menu-hamburguesa">☰</label>
+            <a href="index.htm"><img src="src/assets/svg/logo-airvion.svg" alt="airvion-logo" class="logo-mobile"></a>
+            <ul class="items-menu">
+                <li class="navegacion-menu"><a href="">Inicio</a></li>
+                <li class="navegacion-menu"><a href="">Promociones</a></li>
+                <li class="navegacion-menu"><a href="">Excursiones</a></li>
+                <li class="navegacion-menu"><a href="">Sobre nosotros</a></li>
+                <li class="navegacion-menu"><a href="">Contacto</a></li>
+                <li class="navegacion-menu"><a href="">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home-contenedor">
+            <h1 class="h1">¡Tu viaje de egresados a un solo paso!</h1>
+            <img src="src/assets/img/gif-home.jpg" alt="Imágenes ilustrativas de viajes" class="imagen-home" width="292px">
+            <h2>Nosotros lo hacemos realidad.</h2>
+    </section>
+    <section class="buscador-contenedor">
+        <div class="definir-detalles">
+            <div class="secciones-buscador">
+                <div class="formularios-buscador">
+                    <img class="icono-viajes" src="src/assets/img/ubicacion.png" alt="icono de ubicación" width="15.55px" height="19.95px">
+                    <label for="destino">¿A dónde vas?</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Ingresa un destino" name="destino">
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="secciones-buscador">
+                <div class="formularios-buscador">
+                    <img class="icono-viajes" src="src/assets/img/calendario.png" alt="icono de calendario" width="17.5px" height="20px">
+                    <label for="fecha">¿Cuándo querés ir?</label>
+                </div>
+                <div>
+                    <input type="date" placeholder="Selecciona una fecha" name="fecha">
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="secciones-buscador">
+                <div class="formularios-buscador">
+                    <img class="icono-viajes" src="src/assets/img/personas.png" alt="icono de personas" width="25px" height="20px">
+                    <label for="cuantos-van">¿Cuántos van a ir?</label>
+                </div>
+                <div>
+                    <input type="number" placeholder="Elige cuantos van a ir" name="cuantos-van">
+                </div>
+            </div>
+            <div class="secciones-buscador">
+                <img class="button-search" src="src/assets/svg/lupa.svg" alt="Icono lupa" width="52px" height="52px">
+            </div>
+            <div>
+                <button class="button-mobile-buscar">Buscar</button>
+            </div>
+        </div>
+    </section>
+    <section id="promociones" class="secciones-de-carrousel">
+        <div class="titulo-promociones">
+            <h3 class="titulos-secciones">Ofertas y destinos destacados</h3>
+            <h4 class="subtitulo-secciones">Encontrá los mejores precios para tu viaje soñado.</h4>
+        </div>
+        <!--Aquí va un carrousel con fotos de destinos-->
+        <div class="contenedor-destinos">
+            <div class="destinos-carrousel">
+                <img class="imagen-destino" src="src/assets/img/bariloche.jpg" alt="Ciudad de Bariloche">
+                <div>
+                    <p class="precio">$150.000</p>
+                    <h4 class="ciudad">San Carlos de Bariloche</h4>
+                    <h5 class="pais">Argentina</h5>
+                    <p class="cantidad-lugares">21 lugares para visitar</p>
+                </div>
+            </div>
+            <div class="destinos-carrousel">
+                <img class="imagen-destino" src="src/assets/img/mendoza.jpg" alt="Ciudad de Mendoza">
+                <div>
+                    <p class="precio">$100.000</p>
+                    <h4 class="ciudad">Mendoza</h4>
+                    <h5 class="pais">Argentina</h5>
+                    <p class="cantidad-lugares">23 lugares para visitar</p>
+                </div>
+            </div>
+            <!-- <div>
+                <img class="imagen-destino" src="src/assets/img/mar-del-plata.jpg" alt="Ciudad de Mar del Plata" width="268px">
+                <div>
+                    <p class="precio">$80.000</p>
+                    <h4 class="ciudad">Mar del Plata</h4>
+                    <h5 class="pais">Argentina</h5>
+                    <p class="cantidad-lugares">15 lugares para visitar</p>
+                </div>
+            </div>
+            <div>
+                <img class="imagen-destino" src="src/assets/img/carlos-paz.jpg" alt="Ciudad de Villa Carlos Paz" width="268px">
+                <div>
+                    <p class="precio">$70.000</p>
+                    <h4 class="ciudad">Villa Carlos Paz</h4>
+                    <h5 class="pais">Argentina</h5>
+                    <p class="cantidad-lugares">20 lugares para visitar</p>
+                </div>
+            </div>
+            <div>
+                <img class="imagen-destino" src="src/assets/img/rio-de-janeiro.jpg" alt="Ciudad de Río de Janeiro" width="268px">
+                <div>
+                    <p class="precio">$180.000</p>
+                    <h4 class="ciudad">Río de Janeiro</h4>
+                    <h5 class="pais">Brasil</h5>
+                    <p class="cantidad-lugares">28 lugares para visitar</p>
+                </div>
+            </div>
+            <div>
+                <img class="imagen-destino" src="src/assets/img/camboriu.jpg" alt="Ciudad de Camboriú" width="268px">
+                <div>
+                    <p class="precio">$130.000</p>
+                    <h4 class="ciudad">Camboriú</h4>
+                    <h5 class="pais">Brasil</h5>
+                    <p class="cantidad-lugares">25 lugares para visitar</p>
+                </div>
+            </div> -->
+        </div>
+        
+    </section>
+    <section id="excursiones" class="secciones-de-carrousel orden-carrousel">
+        <div>
+            <!--Aquí va un carrousel de fotos de excursiones-->
+            <div class="contenedor-excursiones">
+                <img src="src/assets/img/ski-sobre-nieve.jpg" alt="Ski sobre nieve" class="imagenes-excursiones">
+                <h5 class="excursiones">Ski sobre nieve</h5>
+                <button class="button-ver-mas">Ver más</button>
+            </div>
+            <!-- <div>
+                <img src="src/assets/img/ski.jpg" alt="Ski" width="468px">
+                <h5 class="excursiones">Ski sobre nieve</h5>
+                <button>Ver más</button>
+            </div>
+            <div>
+                <img src="src/assets/img/playas.jpg" alt="Playa" width="468px">
+                <h5 class="excursiones">Playas increíbles</h5>
+                <button>Ver más</button>
+            </div>
+            <div>
+                <img src="src/assets/img/buceo-en-el-mar.jpg" alt="Buceo en el mar" width="468px">
+                <h5 class="excursiones">Buceo en el mar</h5>
+                <button>Ver más</button>
+            </div>
+            <div>
+                <img src="src/assets/img/rafting.jpg" alt="rafting" width="468px">
+                <h5 class="excursiones">Rafting</h5>
+                <button>Ver más</button>
+            </div>
+            <div>
+                <img src="src/assets/img/aerosillas.jpg" alt="Paseo en aerosillas" width="468px">
+                <h5 class="excursiones">Paseo en Aerosillas</h5>
+                <button>Ver más</button>
+            </div> -->
+        </div>
+        <div>
+            <h3 class="titulos-secciones alineacion-derecha">Excursiones exclusivas para cada destino</h3>
+            <h4 class="subtitulo-secciones alineacion-derecha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, expedita.</h4>
+        </div>
+    </section>
+    <section id="sobreNosotros" class="secciones-de-carrousel">
+        <div class="titulo-nosotros">
+            <h3 class="titulos-secciones">Somos un equipo de profesionales</h3>
+            <p class="parrafo-nosotros">Somos un equipo de profesionales que se encargan del bienestar y el buen pasar de cada egresade orci ornare et. Faucibus imperdiet.</p>
+            <p class="parrafo-nosotros">Semper cursus suspendisse consequat, tellus aliquet in. Aliquam, nulla vel mauris urna orci ornare et. Faucibus imperdiet hac cursus varius nunc, sed ornare in. Faucibus pulvinar vitae aliquet pellentesque.</p>
+        </div>
+        <!--Aquí va un video aún no elegido-->
+        <div>
+            <img class="imagen-equipo" src="src/assets/img/equipo-de-trabajo-2.png" alt="Equipo de trabajo">
+            <!-- <video src=""></video> -->
+        </div>
+    </section>
+    <section>
+            <h3 class="titulos-secciones centrado">Beneficios</h3>
+            <h4 class="subtitulo-secciones centrado">Mirá todos los beneficios que tenemos para vos</h4>
+            <div class="contenedor-beneficios">
+                <div class="beneficios-card">
+                    <h5 class="titulo-cards">Todo tu viaje a un solo click</h5>
+                    <img src="src/assets/img/icono-click.png" alt="Icono de cursor" class="iconos-beneficios">
+                    <p class="parrafo-card-beneficios">Organizá el mejor viaje de egresados juntos a todos tus compañeros.</p>
+                </div>
+                <div class="beneficios-card">
+                    <h5 class="titulo-cards">El mejor financiamiento</h5>
+                    <img src="src/assets/img/icono-tarjeta.png" alt="Icono de tarjeta" class="iconos-beneficios">
+                    <p class="parrafo-card-beneficios">Encontrá los mejores precios para tu viaje soñado y financialo en cuantas cuotas quieras.</p>
+                </div>
+                <div class="beneficios-card">
+                    <h5 class="titulo-cards">Armá el viaje a tu medida</h5>
+                    <img src="src/assets/img/icono-viaje.png" alt="Icono de Viaje" class="iconos-beneficios">
+                    <p class="parrafo-card-beneficios">El viaje lo armás vos, elegí los destinos, las excursiones y nosotros armamos el viaje a tu medida.</p>
+                </div>
+            </div>
+            <p class="parrafo-inferior-beneficios">Comprando tu viaje en nuestro sitio web, obtenés <b> descuentos exclusivos </b> siempre y al <b> mejor precio del mercado</b>.</p>
+    </section>
+    <section class="contenedor-cards">
+        <h3 class="titulos-secciones centrado">Medios de pago</h3>
+        <h4 class="subtitulo-secciones centrado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, commodi.</h4>
+            <div class="contenedor-medios">
+                <h5 class="titulo-medios">Transferencia bancaria</h5>
+                <img class="logo-transferencia" src="src/assets/img/transferencias.png" alt="Imagen de transferencia">
+            </div>
+            <div class="contenedor-medios">
+                <h5 class="titulo-medios">Mercado Pago</h5>
+                <img class="logo-mercadopago" src="src/assets/img/logo-mercado-pago.png" alt="Logo de Mercado Pago">
+            </div>
+            <div class="contenedor-medios">
+                <h5 class="titulo-medios">Tarjetas de crédito</h5>
+                <img class="logo-mastercard" src="src/assets/img/logos_mastercard.png" alt="Logo de Mastercard">
+                <img class="logo-visa" src="src/assets/img/logos_visa.png" alt="Logo de Visa">
+            </div>
+            <div class="contenedor-medios">
+                <h5 class="titulo-medios">Efectivo</h5>
+                <img class="logo-pago-facil" src="src/assets/img/logo-pago-facil.png" alt="Logo de Pago Fácil">
+                <img class="logo-rapipago" src="src/assets/img/logo-rapipago.png" alt="Logo de Rapipago">
+            </div>
+    </section>
+    <!-- <section class="grid-container">
+        <h3 class="titulos-secciones titulo-grid">Medios de pago</h3>
+        <h4 class="subtitulo-secciones subtitulo-grid">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, commodi.</h4>
+            <div class="grid-item1">
+                <h5 class="titulo-medios">Transferencia bancaria</h5>
+                <img class="logos-medios-de-pago" src="src/assets/img/transferencias.png" alt="Imagen de transferencia" width="84px">
+            </div>
+            <div class="grid-item2">
+                <h5 class="titulo-medios">Mercado Pago</h5>
+                <img class="logos-medios-de-pago" src="src/assets/img/logo-mercado-pago.png" alt="Logo de Mercado Pago" width="217px">
+            </div>
+            <div class="grid-item3">
+                <h5 class="titulo-medios">Tarjetas de crédito</h5>
+                <img class="logos-medios-de-pago" src="src/assets/img/logos_mastercard.png" alt="Logo de Mastercard" width="86px">
+                <img class="logos-medios-de-pago" src="src/assets/img/logos_visa.png" alt="Logo de Visa" width="123px">
+            </div>
+            <div class="grid-item4">
+                <h5 class="titulo-medios">Efectivo</h5>
+                <img class="logos-medios-de-pago" src="src/assets/img/logo-pago-facil.png" alt="Logo de Pago Fácil" width="74px">
+                <img class="logos-medios-de-pago" src="src/assets/img/logo-rapipago.png" alt="Logo de Rapipago" width="173px">
+            </div>
+    </section> -->
+    <footer>
+        <div class="footer-navegable">
+        <section class="section-email">
+                <h3 class="titulos-secciones">Hacemos realidad tu viaje de egresados.</h3>
+                <img src="src/assets/img/email.png" alt="email" class="icono-email" width="48px">
+                <label class="subtitulo-ofertas-mail">Ofertas exclusivas en tu email</label>
+                <input class="formulario-email" type="text" placeholder="Ingresa tu email">
+                <button class="button-promociones">¡Quiero recibirlas!</button>
+        </section>
+        <section id="contacto" class="footer-contacto">
+            <nav class="section-contacto">
+            <h4 class="titulos-footer">Contacto</h4>
+                <ul>
+                    <li><a href="https://wa.me/543434609262" target="_blank">+543435443366</a></li>
+                    <li><a href="mailto:celesortman@gmail.com">airvion@gmail.com</a></li>
+                </ul>
+            </nav>
+            <nav class="section-redes">
+                <hr class="linea-redes">
+                <h4 class="titulo-redes">Encontranos en las redes</h4>
+                <hr class="linea-redes">
+                <ul class="conjunto-iconos-redes">
+                    <li class="iconos-redes"><a href="https://www.instagram.com/" target="_blank"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M39.8712 11.8062C39.8488 10.1267 39.5338 8.46386 38.9405 6.89212C38.4259 5.56637 37.64 4.36234 36.633 3.35698C35.6259 2.35162 34.4199 1.56703 33.092 1.05333C31.5378 0.470911 29.896 0.155985 28.2363 0.121965C26.0995 0.0266106 25.422 0 19.9978 0C14.5735 0 13.8783 1.48698e-07 11.757 0.121965C10.0981 0.156235 8.45702 0.471157 6.9036 1.05333C5.57543 1.56667 4.36922 2.35114 3.36213 3.35654C2.35505 4.36195 1.56928 5.56616 1.05509 6.89212C0.470526 8.44247 0.15576 10.0812 0.124389 11.7374C0.028876 13.8729 0 14.5493 0 19.9645C0 25.3798 -1.65495e-08 26.0716 0.124389 28.1916C0.157708 29.8503 0.470902 31.4869 1.05509 33.0414C1.57014 34.3669 2.3565 35.5706 3.36392 36.5756C4.37134 37.5806 5.57766 38.3647 6.90582 38.8779C8.45498 39.4838 10.0963 39.8212 11.7592 39.8758C13.8983 39.9712 14.5757 40 20 40C25.4243 40 26.1195 40 28.2408 39.8758C29.9004 39.8432 31.5423 39.529 33.0964 38.9467C34.424 38.4324 35.6297 37.6476 36.6367 36.6423C37.6437 35.637 38.4298 34.4333 38.9449 33.1079C39.5291 31.5556 39.8423 29.9191 39.8756 28.2581C39.9711 26.1249 40 25.4485 40 20.031C39.9956 14.6158 39.9956 13.9284 39.8712 11.8062ZM19.9845 30.2051C14.3114 30.2051 9.71568 25.617 9.71568 19.9534C9.71568 14.2898 14.3114 9.70174 19.9845 9.70174C22.7079 9.70174 25.3198 10.7818 27.2456 12.7044C29.1713 14.627 30.2532 17.2345 30.2532 19.9534C30.2532 22.6724 29.1713 25.2799 27.2456 27.2025C25.3198 29.125 22.7079 30.2051 19.9845 30.2051ZM30.6619 11.7131C30.3474 11.7133 30.0359 11.6517 29.7453 11.5317C29.4546 11.4116 29.1905 11.2356 28.9681 11.0135C28.7457 10.7915 28.5693 10.5279 28.4491 10.2377C28.3289 9.94753 28.2671 9.63655 28.2674 9.32254C28.2674 9.00876 28.3293 8.69805 28.4496 8.40816C28.5699 8.11826 28.7462 7.85486 28.9684 7.63298C29.1907 7.4111 29.4545 7.2351 29.7449 7.11502C30.0353 6.99495 30.3465 6.93314 30.6608 6.93314C30.9751 6.93314 31.2863 6.99495 31.5767 7.11502C31.8671 7.2351 32.131 7.4111 32.3532 7.63298C32.5754 7.85486 32.7517 8.11826 32.872 8.40816C32.9923 8.69805 33.0542 9.00876 33.0542 9.32254C33.0542 10.6442 31.9836 11.7131 30.6619 11.7131Z" fill="#292929"/>
+                        <path d="M19.9997 26.6668C23.6816 26.6668 26.6663 23.6821 26.6663 20.0002C26.6663 16.3183 23.6816 13.3335 19.9997 13.3335C16.3178 13.3335 13.333 16.3183 13.333 20.0002C13.333 23.6821 16.3178 26.6668 19.9997 26.6668Z" fill="#292929"/>
+                        </svg></a>
+                    </li>
+                    <li class="iconos-redes"><a href="https://www.facebook.com/" target="_blank"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_147_272)">
+                        <path d="M7.30376 0C3.2578 0 0 3.2578 0 7.30376V32.6963C0 36.7422 3.2578 40 7.30376 40H21.0663V24.3625H16.9313V18.7325H21.0663V13.9225C21.0663 10.1435 23.5094 6.67376 29.1375 6.67376C31.4162 6.67376 33.1013 6.89252 33.1013 6.89252L32.9688 12.15C32.9688 12.15 31.2502 12.1338 29.375 12.1338C27.3454 12.1338 27.02 13.0689 27.02 14.6213V18.7326H33.13L32.8638 24.3626H27.02V40.0001H32.6962C36.7422 40.0001 40 36.7423 40 32.6963V7.3038C40 3.25784 36.7422 4e-05 32.6962 4e-05H7.30372L7.30376 0Z" fill="#292929"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_147_272">
+                        <rect width="40" height="40" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg></a>
+                    </li>
+                    <li class="iconos-redes"><a href="https://twitter.com/" target="_blank"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.3333 12.5521C32.3611 12.9861 31.3108 13.2812 30.1823 13.4375C31.3628 12.7431 32.1701 11.7274 32.6042 10.3906C31.4757 11.0503 30.3125 11.4931 29.1146 11.7188C28.0556 10.5729 26.7274 10 25.1302 10C23.6198 10 22.3307 10.5339 21.263 11.6016C20.1953 12.6693 19.6615 13.9583 19.6615 15.4688C19.6615 15.9722 19.7049 16.3889 19.7917 16.7188C17.5521 16.5972 15.4514 16.033 13.4896 15.026C11.5278 14.0191 9.86111 12.6736 8.48958 10.9896C7.98611 11.8576 7.73438 12.7778 7.73438 13.75C7.73438 15.7292 8.52431 17.2483 10.1042 18.3073C9.28819 18.2899 8.42014 18.0642 7.5 17.6302V17.6823C7.5 18.9844 7.93403 20.1432 8.80208 21.1589C9.67014 22.1745 10.7378 22.8038 12.0052 23.0469C11.5017 23.1858 11.059 23.2552 10.6771 23.2552C10.4514 23.2552 10.1128 23.2205 9.66146 23.151C10.026 24.2448 10.6727 25.1476 11.6016 25.8594C12.5304 26.5712 13.5851 26.9358 14.7656 26.9531C12.7517 28.5156 10.4861 29.2969 7.96875 29.2969C7.51736 29.2969 7.08333 29.2708 6.66667 29.2188C9.23611 30.8507 12.0312 31.6667 15.0521 31.6667C16.9965 31.6667 18.8194 31.3585 20.5208 30.7422C22.2222 30.1259 23.6806 29.3012 24.8958 28.2682C26.1111 27.2352 27.1571 26.046 28.0339 24.7005C28.9106 23.355 29.5616 21.9488 29.987 20.4818C30.4123 19.0148 30.625 17.5521 30.625 16.0938C30.625 15.7812 30.6163 15.5469 30.599 15.3906C31.6927 14.6094 32.6042 13.6632 33.3333 12.5521ZM40 7.5V32.5C40 34.566 39.2665 36.3325 37.7995 37.7995C36.3325 39.2665 34.566 40 32.5 40H7.5C5.43403 40 3.66753 39.2665 2.20052 37.7995C0.733507 36.3325 0 34.566 0 32.5V7.5C0 5.43403 0.733507 3.66753 2.20052 2.20052C3.66753 0.733507 5.43403 0 7.5 0H32.5C34.566 0 36.3325 0.733507 37.7995 2.20052C39.2665 3.66753 40 5.43403 40 7.5Z" fill="#292929"/>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="iconos-redes"><a href="https://www.linkedin.com/" target="_blank"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.94654e-07 3.34182C4.94654e-07 2.45552 0.352084 1.60551 0.978796 0.9788C1.60551 0.352088 2.45551 4.45511e-06 3.34182 4.45511e-06H36.6545C37.0938 -0.000712911 37.5288 0.0852097 37.9348 0.252853C38.3408 0.420496 38.7097 0.666568 39.0204 0.976979C39.3312 1.28739 39.5777 1.65605 39.7458 2.06184C39.9138 2.46763 40.0002 2.9026 40 3.34182V36.6545C40.0005 37.0939 39.9143 37.529 39.7465 37.9349C39.5786 38.3409 39.3324 38.7098 39.0218 39.0206C38.7113 39.3313 38.3425 39.5777 37.9366 39.7458C37.5307 39.9139 37.0957 40.0002 36.6564 40H3.34182C2.90281 40 2.46811 39.9135 2.06254 39.7454C1.65697 39.5774 1.28849 39.3311 0.978153 39.0206C0.667813 38.7101 0.421694 38.3414 0.253859 37.9358C0.0860241 37.5301 -0.000238356 37.0954 4.94654e-07 36.6564V3.34182ZM15.8327 15.2509H21.2491V17.9709C22.0309 16.4073 24.0309 15 27.0364 15C32.7982 15 34.1636 18.1145 34.1636 23.8291V34.4145H28.3327V25.1309C28.3327 21.8764 27.5509 20.04 25.5655 20.04C22.8109 20.04 21.6655 22.02 21.6655 25.1309V34.4145H15.8327V15.2509ZM5.83273 34.1655H11.6655V15H5.83273V34.1636V34.1655ZM12.5 8.74909C12.511 9.2485 12.4221 9.74507 12.2386 10.2097C12.0551 10.6743 11.7806 11.0975 11.4313 11.4546C11.082 11.8117 10.6649 12.0954 10.2045 12.2891C9.74402 12.4828 9.24953 12.5826 8.75 12.5826C8.25047 12.5826 7.75598 12.4828 7.29554 12.2891C6.83509 12.0954 6.41798 11.8117 6.06867 11.4546C5.71936 11.0975 5.4449 10.6743 5.26138 10.2097C5.07787 9.74507 4.989 9.2485 5 8.74909C5.02159 7.76883 5.42615 6.83599 6.12706 6.15034C6.82797 5.4647 7.7695 5.08076 8.75 5.08076C9.7305 5.08076 10.672 5.4647 11.3729 6.15034C12.0738 6.83599 12.4784 7.76883 12.5 8.74909Z" fill="#292929"/>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="iconos-redes"><a href="https://www.youtube.com/" target="_blank"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_147_269)">
+                        <path d="M20.1275 4.99756H20.35C22.405 5.00506 32.8175 5.08006 35.625 5.83506C36.4737 6.06548 37.2471 6.51461 37.8679 7.13758C38.4887 7.76054 38.9351 8.53552 39.1625 9.38506C39.415 10.3351 39.5925 11.5926 39.7125 12.8901L39.7375 13.1501L39.7925 13.8001L39.8125 14.0601C39.975 16.3451 39.995 18.4851 39.9975 18.9526V19.1401C39.995 19.6251 39.9725 21.9101 39.7925 24.2901L39.7725 24.5526L39.75 24.8126C39.625 26.2426 39.44 27.6626 39.1625 28.7076C38.9358 29.5574 38.4896 30.3328 37.8687 30.9559C37.2478 31.5789 36.4741 32.0278 35.625 32.2576C32.725 33.0376 21.7025 33.0926 20.175 33.0951H19.82C19.0475 33.0951 15.8525 33.0801 12.5025 32.9651L12.0775 32.9501L11.86 32.9401L11.4325 32.9226L11.005 32.9051C8.23 32.7826 5.5875 32.5851 4.37 32.2551C3.52122 32.0255 2.74766 31.577 2.12681 30.9544C1.50596 30.3318 1.05962 29.557 0.8325 28.7076C0.555 27.6651 0.37 26.2426 0.245 24.8126L0.225 24.5501L0.205 24.2901C0.081619 22.5961 0.0132497 20.8985 0 19.2001L0 18.8926C0.005 18.3551 0.025 16.4976 0.16 14.4476L0.1775 14.1901L0.185 14.0601L0.205 13.8001L0.26 13.1501L0.285 12.8901C0.405 11.5926 0.5825 10.3326 0.835 9.38506C1.06173 8.53518 1.50791 7.75984 2.12878 7.13676C2.74966 6.51369 3.52342 6.06479 4.3725 5.83506C5.59 5.51006 8.2325 5.31006 11.0075 5.18506L11.4325 5.16756L11.8625 5.15256L12.0775 5.14506L12.505 5.12756C14.8843 5.051 17.2645 5.00849 19.645 5.00006H20.1275V4.99756ZM16 13.0226V25.0676L26.3925 19.0476L16 13.0226Z" fill="#292929"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_147_269">
+                        <rect width="40" height="40" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+                <hr class="fin-redes">
+            </nav>
+        </section>
+        <section class="section-nosotros ">
+            <nav>
+                <h4 class="titulos-footer">Sobre nosotros</h4>
+                    <ul>
+                        <li><a href="#sobreNosotros">¿Quiénes somos?</a></li>
+                        <li>Trabajos</li>
+                        <li>Términos y Condiciones</li>
+                        <li>Politicas de privacidad</li>
+                    </ul>
+            </nav>
+        </section>
+    </div>
+        <p class="copyright"><b>Copyright</b> © 2020-2021 Airvion.com. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
