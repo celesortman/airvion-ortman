@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="header-contenedor">
@@ -81,7 +82,7 @@
             </div>
         </div>
     </section>
-    <section id="promociones" class="secciones-de-carrousel">
+    <section id="promociones" class="secciones-de-carrousel" data-aos="fade-up">
         <div class="titulo-promociones">
             <h3 class="titulos-secciones">Ofertas y destinos destacados</h3>
             <h4 class="subtitulo-secciones">Encontrá los mejores precios para tu viaje soñado.</h4>
@@ -145,7 +146,7 @@
         </div>
         
     </section>
-    <section id="excursiones" class="secciones-de-carrousel orden-carrousel">
+    <section id="excursiones" class="secciones-de-carrousel orden-carrousel" data-aos="fade-up">
         <div>
             <!--Aquí va un carrousel de fotos de excursiones-->
             <div class="contenedor-excursiones">
@@ -184,7 +185,7 @@
             <h4 class="subtitulo-secciones alineacion-derecha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, expedita.</h4>
         </div>
     </section>
-    <section id="sobreNosotros" class="secciones-de-carrousel">
+    <section id="sobreNosotros" class="secciones-de-carrousel" data-aos="fade-up">
         <div class="titulo-nosotros">
             <h3 class="titulos-secciones">Somos un equipo de profesionales</h3>
             <p class="parrafo-nosotros">Somos un equipo de profesionales que se encargan del bienestar y el buen pasar de cada egresade orci ornare et. Faucibus imperdiet.</p>
@@ -196,7 +197,7 @@
             <!-- <video src=""></video> -->
         </div>
     </section>
-    <section>
+    <section data-aos="zoom-in">
             <h3 class="titulos-secciones centrado">Beneficios</h3>
             <h4 class="subtitulo-secciones centrado">Mirá todos los beneficios que tenemos para vos</h4>
             <div class="contenedor-beneficios">
@@ -218,7 +219,7 @@
             </div>
             <p class="parrafo-inferior-beneficios">Comprando tu viaje en nuestro sitio web, obtenés <b> descuentos exclusivos </b> siempre y al <b> mejor precio del mercado</b>.</p>
     </section>
-    <section class="contenedor-cards">
+    <section class="contenedor-cards" data-aos="zoom-in-up">
         <h3 class="titulos-secciones centrado">Medios de pago</h3>
         <h4 class="subtitulo-secciones centrado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, commodi.</h4>
             <div class="contenedor-medios">
@@ -340,5 +341,9 @@
     </div>
         <p class="copyright"><b>Copyright</b> © 2020-2021 Airvion.com. Todos los derechos reservados</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
