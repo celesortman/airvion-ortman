@@ -25,44 +25,8 @@ p {
     font-weight: 400;
     font-size: 16px;
 }
-/* Header home */
-.header-contenedor {
-    background-color: white;
-    height: 64px;
-    width: 100%;
-    padding: 0 3% 0 3%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-.header-items {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.header-items ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 352px;
-}
-.header-items ul li {
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px 0 16px;
-}
 @media only screen and (max-width: 480px) {
+    /* Header */
     .items-menu {
         display: none;
         margin-top: 384px;
@@ -116,60 +80,7 @@ p {
         height: 42px;
         align-items: center;
     }
-}
-@media only screen and (min-width: 481px) and (max-width: 968px) {
-    .header-items {
-        font-weight: 400;
-        font-size: 14px;
-    }
-    .header-items ul li {
-        padding: 0 12px;
-    }
-    .menu-desplegable {
-        display: none;
-    }
-}
-@media only screen and (min-width: 969px) {
-    .header-items {
-        font-weight: 400;
-        font-size: 16px;
-    }
-    .menu-desplegable {
-        display: none;
-    }
-}
-.inicio {
-    font-weight: 700;
-    color: #4E63D4;
-}
-.registro {
-    font-weight: 500;
-    color: #4E63D4;
-    padding: 8px 12px;
-    border: 2px solid #4E63D4;
-    border-radius: 8px;
-}
-.registro:hover {
-    background-color: #4E63D4;
-    border: 2px solid white;
-    color: white;
-    transition: all 300ms ease-out;
-}
-/* Fin header home */
-/* Section Home */
-.fondo-home {
-    margin: 44px 3% 0 3%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #CFECF2;
-    border-radius: 40px;
-    width: 1240px;
-    height: 632px;
-    z-index: -1;
-}
-@media only screen and (max-width: 480px) {
+    /* Home */
     .home-contenedor {
         background-color: #CEECF2;
         border-radius: 40px;
@@ -202,55 +113,7 @@ p {
     .imagen-home {
         display: none;
     }
-}
-@media only screen and (min-width: 969px) {
-    .home-contenedor {
-        background-color: #CEECF2;
-        border-radius: 40px;
-        height: 632px;
-        width: 1260px;
-        margin: auto;
-        margin-top: 68px;
-        z-index: -1;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    .h1 {
-        font-weight: 700;
-        font-size: 96px;
-        width: 714px;
-        margin-bottom: 8px;
-        margin-right: 10px;
-        line-height: 120px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 60px;
-    }
-    h2 {
-        font-weight: 500;
-        font-size: 42px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: -128px;
-        margin-left: -368px;
-    }
-    .imagen-home {
-        border-radius: 20px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        margin-top: 80px;
-    }
-}
-/* Fin section Home */
-/* Section Buscador*/
-@media only screen and (max-width: 480px) {
+    /* Buscador */
     .buscador-contenedor {
         position: relative;
         top: -420px;
@@ -319,80 +182,7 @@ p {
         font-size: 14px;
         box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
     }
-}
-@media only screen and (min-width: 969px) {
-    .buscador-contenedor {
-        position: relative;
-        top: -94px;
-        background-color: #f9f9f9be;
-        border-radius: 20px;
-        margin: auto;
-        box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
-        -webkit-box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
-        -moz-box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
-        z-index: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 1030px;
-        height: 188px;
-        margin-bottom: 148px;
-    }
-    .button-mobile-buscar {
-        display: none;
-    }
-    .definir-detalles {
-        display: flex;
-        justify-content: center;
-        align-content: center
-    }
-    .secciones-buscador {
-        display: inline-block;
-        padding: 0 16px 0 16px;
-    }
-    .vertical-line {
-        border-left: 1px solid #CCC8C8;
-    }
-    .formularios-buscador {
-        margin-bottom: 32px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    label{
-        font-weight: 700;
-        font-size: 24px;
-    }
-    input {
-        background-color: #EEEBEB;
-        color: #494747;
-        border: none;
-        width: 220px;
-        height: 48px;
-        border-radius: 12px;
-        font-weight: 400;
-        font-size: 14px;
-        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
-    }
-    .button-search {
-        background-color: #4E63D4;
-        border-radius: 12px;
-        width: 64px;
-        height: 112px;
-    }
-    .button-search:hover {
-        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
-        box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.25) inset;
-        transform: scale(1.2);
-        transition: all 250ms ease-out;
-    }
-}
-.icono-viajes {
-    padding-right: 8px;
-}
-/* Fin section Buscador */
-/* Section Promociones*/
-@media only screen and (max-width: 480px) {
+    /* Promociones */
     .secciones-de-carrousel {
         width: 77%;
         display: flex;
@@ -467,88 +257,7 @@ p {
         font-weight: 400;
         font-size: 12px;
     }
-}
-@media only screen and (min-width: 969px) {
-    .secciones-de-carrousel {
-        width: 1030px;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        margin: auto;
-        margin-bottom: 148px;
-    }
-    .titulo-promociones {
-        width: 300px;
-        margin-right: 144px;
-    }
-    .titulos-secciones {
-        font-weight: 700;
-        font-size: 32px;
-        margin-bottom: 16px;
-    }
-    .subtitulo-secciones {
-        font-weight: 400;
-        font-size: 20px;
-        color: #757272;
-        margin-bottom: 72px;
-    }
-    .contenedor-destinos {
-        width: 372px;
-        display: flex;
-        flex-flow: row;
-        justify-content: flex-start;
-    }
-    .destinos-carrousel {
-        width: 268px;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        margin-right: 56px;
-    }
-    .imagen-destino {
-        border-radius: 25px;
-        width: 268px;
-    }
-    .precio {
-        background-color: #4E63D4;
-        color: white;
-        font-weight: 600;
-        font-size: 24px;
-        border-radius: 6px;
-        width: 156px;
-        height: 48px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -24px;
-        margin-left: 92px;
-        margin-bottom: 24px;
-    }
-    .precio:hover {
-        transform: scale(1.5);
-        transition: all 300ms ease-out;
-    }
-    .ciudad {
-        font-weight: 500;
-        font-size: 16px;
-        color: #292929;
-        margin-bottom: 8px;
-    }
-    .pais {
-        font-weight: 500;
-        font-size: 16px;
-        color: #494747;
-        margin-bottom: 12px;
-    }
-    .cantidad-lugares {
-        color: #757272;
-        font-weight: 400;
-        font-size: 14px;
-    }
-}
-/* Fin section Promociones */
-/* Section Excursiones */
-@media only screen and (max-width: 480px) {
+    /* Excursiones */
     .orden-carrousel {
         width: 372px;
         display: flex;
@@ -583,49 +292,7 @@ p {
         width: 214px;
         height: 52px;
     }
-}
-@media only screen and (min-width: 969px) {
-    .imagenes-excursiones {
-        width: 468px;
-    }
-    .contenedor-excursiones {
-        width: 484px;
-        height: 496px;
-        display: block;
-        margin-right: 100px;
-    }
-    .contenedor-excursiones h5 {
-        margin-top: 28px;
-    }
-    .contenedor-excursiones button {
-        margin-left: 116px;
-        margin-top: 32px;
-    }
-    .excursiones {
-        font-weight: 500;
-        font-size: 16px;
-        color: #292929;
-    }
-    .button-ver-mas {
-        background-color: #4E63D4;
-        color: white;
-        border-radius: 6px;
-        border: none;
-        font-weight: 600;
-        font-size: 24px;
-        width: 214px;
-        height: 52px;
-    }
-    .button-ver-mas:hover {
-        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
-        box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.25) inset;
-        transform: scale(1.2);
-        transition: all 250ms ease-out;
-    }
-}
-/* Fin section Excuriones*/
-/* Section Sobre nosotros*/
-@media only screen and (max-width: 480px) {
+    /* Sobre nosotros */
     .parrafo-nosotros {
         font-weight: 400;
         font-size: 16px;
@@ -638,27 +305,7 @@ p {
         border-radius: 30px;
         margin-top: 20px;
     }
-}
-@media only screen and (min-width: 969px) {
-    .titulo-nosotros {
-        width: 300px;
-        margin-right: 266px;
-    }
-    .parrafo-nosotros {
-        font-weight: 400;
-        font-size: 20px;
-        color: #757272;
-        width: 448px;
-    }
-    .imagen-equipo {
-        width: 468px;
-        height: 360px;
-        border-radius: 30px;
-    }
-}
-/* Fin section Sobre nosotros */
-/* Section Beneficios*/
-@media only screen and (max-width: 480px) {
+    /* Beneficios */
     .contenedor-beneficios {
         display: flex;
         justify-content: center;
@@ -714,121 +361,7 @@ p {
         justify-content: center;
         margin: 0 4px 0 4px;
     }
-}
-@media only screen and (min-width: 969px) {
-    .contenedor-beneficios {
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        margin-top: 72px;
-        margin-bottom: 72px;
-    }
-    .beneficios-card { 
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #CFECF2;
-        width: 416px;
-        height: 188px;
-        border-radius: 15px;
-        margin: 0px 20px 0px 0px;
-    }
-    .beneficios-card h5 {
-        display: flex;
-        margin: 16px 40px 20px 20px;
-    }
-    .parrafo-card-beneficios {
-        width: 356px;
-        font-weight: 400;
-        font-size: 20px;
-        display: flex;
-        margin: 0 40px 20px 20px;
-    }
-    .iconos-beneficios {
-        width: 32px;
-        display: flex;
-        margin: 16px 20px 20px 0;
-    }
-    .parrafo-inferior-beneficios {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        font-weight: 400;
-        font-size: 24px;
-        text-align: center;
-        width: 948px;
-        margin: auto;
-        margin-bottom: 148px;
-    }
-    b {
-        margin: 0 8px 0 8px;
-    }
-}
-/* Fin section Beneficios*/
-/* Section Medios de pago con grid*/
-/* .grid-container {
-    margin-bottom: 148px;
-    display: grid;
-    grid-template-rows: 44px 64px 188px 188px;
-    grid-template-columns: 432px 432px;
-    justify-content: center;
-    column-gap: 12px;
-    row-gap: 28px;
-    grid-template-areas: 
-    "titulo titulo"
-    "subtitulo subtitulo"
-    "card1 card2"
-    "card3 card4";
-}
-.titulo-grid {
-    grid-area: titulo;
-    text-align: center;
-}
-.subtitulo-grid {
-    grid-area: subtitulo;
-    text-align: center;
-}
-.grid-container div {
-    background-color: white;
-    border: 4px solid #CEECF2;
-    border-radius: 15px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: baseline;
-}
-.grid-item1 {
-    width: 416px;
-    height: 188px;
-    text-align: center;
-    grid-area: card1;
-}
-.grid-item2 {
-    width: 416px;
-    height: 188px;
-    text-align: center;
-    display: inline-block;
-    grid-area: card2;
-}
-.grid-item3 {
-    width: 416px;
-    height: 188px;
-    text-align: center;
-    display: inline-block;
-    grid-area: card3;
-}
-.grid-item4 {
-    width: 416px;
-    height: 188px;
-    text-align: center;
-    display: inline-block;
-    grid-area: card4;
-} */
-/* Fin section Medios de pago con grid */
-/* Section Medios de pago */
-@media only screen and (max-width: 480px) {
+    /* Medios de pago */
     .contenedor-cards {
         width: 372px;
         display: flex;
@@ -892,69 +425,7 @@ p {
         display: flex;
         flex-flow: row nowrap;
     }
-}
-@media only screen and (min-width: 969px) {
-    .contenedor-cards {
-        width: 924px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        margin: auto;
-        margin-bottom: 148px;
-    }
-    .contenedor-medios {
-        background-color: white;
-        border: 4px solid #CEECF2;
-        border-radius: 15px;
-        width: 416px;
-        height: 188px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: baseline;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-    .titulo-medios {
-        padding: 12px;
-        margin-bottom: 16px;
-        width: 348px;
-        text-align: center;
-    }
-    .logo-transferencia {
-        width: 84px;
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    .logo-mercadopago {
-        width: 217px;
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    .logo-mastercard {
-        width: 86px;
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    .logo-visa {
-        width: 123px;
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    .logo-pago-facil {
-        width: 74px;
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    .logo-rapipago {
-        width: 173px;
-        display: flex;
-        flex-flow: row nowrap;
-    }
-}
-/* Fin section Medios de pago */
-/* Footer home */
-@media only screen and (max-width: 480px) {
+    /* Footer */
     footer {
         background-color: #CEECF2;
         width: 100%;
@@ -1048,8 +519,531 @@ p {
         color: #757272;
         margin: auto;
     }
+    /* Pagina Registro */
+    .nav-ayuda {
+        display: none;
+    }
+    .registro-contenedor-big {
+        background-color: white;
+        width: 372px;
+        height: 1468px;
+        margin: auto;
+        margin-top: 116px;
+        margin-bottom: 68px;
+        border-radius: 30px;
+        z-index: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    .registro-contenedor-small {
+        width: 372px;
+        height: 282px;
+        border-radius: 30px;
+        box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.25);
+        -webkit-box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.25);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    .gif-cohete {
+        display: flex;
+        justify-content: center;
+        width: 172px;
+        margin: auto;
+        margin-top: 16px;
+    }
+    .titulo-registro {
+        font-weight: 500;
+        font-size: 24px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-de-formulario {
+        width: 372px;
+        height: 1044px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 0%;
+    }
+    .label-formulario {
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .input-registro {
+        width: 340px;
+        height: 48px;
+        background-color: #EDF4F9;
+        color: #757272;
+        border-radius: 12px;
+    }
+    .formulario {
+        width: 340px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+    .requisito-contraseña {
+        font-size: 12px;
+        width: 332px;
+        margin-top: 12px;
+    }
+    .contenedor-boton-crear-cuenta {
+        width: 320px;
+        height: 52px;
+        background-color: #4E63D4;
+        color: white;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 20px;
+        border: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .contenedor-redes-ingreso {
+        text-decoration: none;
+        margin: auto;
+        margin-top: 12px;
+    }
+    .contenedor-facebook {
+        background-color: #395185;
+        color: white;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        width: 320px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .titulo-facebook {
+        margin-left: 12px;
+    }
+    .contenedor-google {
+        background-color: #F15744;
+        color: white;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        width: 320px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .parrafos-inferiores-formulario {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer-registro {
+        width: 100%;
+        height: 52px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright-registro {
+        width: 340px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: #757272;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+    .header-items {
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .header-items ul li {
+        padding: 0 12px;
+    }
+    .menu-desplegable {
+        display: none;
+    }
 }
 @media only screen and (min-width: 969px) {
+    .header-items {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .menu-desplegable {
+        display: none;
+    }
+    .home-contenedor {
+        background-color: #CEECF2;
+        border-radius: 40px;
+        height: 632px;
+        width: 1260px;
+        margin: auto;
+        margin-top: 68px;
+        z-index: -1;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .h1 {
+        font-weight: 700;
+        font-size: 96px;
+        width: 714px;
+        margin-bottom: 8px;
+        margin-right: 10px;
+        line-height: 120px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+    h2 {
+        font-weight: 500;
+        font-size: 42px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: -128px;
+        margin-left: -368px;
+    }
+    .imagen-home {
+        border-radius: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        margin-top: 80px;
+    }
+    /* Buscador */
+    .buscador-contenedor {
+        position: relative;
+        top: -94px;
+        background-color: #f9f9f9be;
+        border-radius: 20px;
+        margin: auto;
+        box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
+        -webkit-box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
+        z-index: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 1030px;
+        height: 188px;
+        margin-bottom: 148px;
+    }
+    .button-mobile-buscar {
+        display: none;
+    }
+    .definir-detalles {
+        display: flex;
+        justify-content: center;
+        align-content: center
+    }
+    .secciones-buscador {
+        display: inline-block;
+        padding: 0 16px 0 16px;
+    }
+    .vertical-line {
+        border-left: 1px solid #CCC8C8;
+    }
+    .formularios-buscador {
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    label{
+        font-weight: 700;
+        font-size: 24px;
+    }
+    input {
+        background-color: #EEEBEB;
+        color: #494747;
+        border: none;
+        width: 220px;
+        height: 48px;
+        border-radius: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
+    }
+    .button-search {
+        background-color: #4E63D4;
+        border-radius: 12px;
+        width: 64px;
+        height: 112px;
+    }
+    .button-search:hover {
+        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+        box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+        transform: scale(1.2);
+        transition: all 250ms ease-out;
+    }
+    /* Promociones */
+    .secciones-de-carrousel {
+        width: 1030px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        margin: auto;
+        margin-bottom: 148px;
+    }
+    .titulo-promociones {
+        width: 300px;
+        margin-right: 144px;
+    }
+    .titulos-secciones {
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .subtitulo-secciones {
+        font-weight: 400;
+        font-size: 20px;
+        color: #757272;
+        margin-bottom: 72px;
+    }
+    .contenedor-destinos {
+        width: 372px;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+    }
+    .destinos-carrousel {
+        width: 268px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        margin-right: 56px;
+    }
+    .imagen-destino {
+        border-radius: 25px;
+        width: 268px;
+    }
+    .precio {
+        background-color: #4E63D4;
+        color: white;
+        font-weight: 600;
+        font-size: 24px;
+        border-radius: 6px;
+        width: 156px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -24px;
+        margin-left: 92px;
+        margin-bottom: 24px;
+    }
+    .precio:hover {
+        transform: scale(1.5);
+        transition: all 300ms ease-out;
+    }
+    .ciudad {
+        font-weight: 500;
+        font-size: 16px;
+        color: #292929;
+        margin-bottom: 8px;
+    }
+    .pais {
+        font-weight: 500;
+        font-size: 16px;
+        color: #494747;
+        margin-bottom: 12px;
+    }
+    .cantidad-lugares {
+        color: #757272;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    /* Excursiones */
+    .imagenes-excursiones {
+        width: 468px;
+    }
+    .contenedor-excursiones {
+        width: 484px;
+        height: 496px;
+        display: block;
+        margin-right: 100px;
+    }
+    .contenedor-excursiones h5 {
+        margin-top: 28px;
+    }
+    .contenedor-excursiones button {
+        margin-left: 116px;
+        margin-top: 32px;
+    }
+    .excursiones {
+        font-weight: 500;
+        font-size: 16px;
+        color: #292929;
+    }
+    .button-ver-mas {
+        background-color: #4E63D4;
+        color: white;
+        border-radius: 6px;
+        border: none;
+        font-weight: 600;
+        font-size: 24px;
+        width: 214px;
+        height: 52px;
+    }
+    .button-ver-mas:hover {
+        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+        box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+        transform: scale(1.2);
+        transition: all 250ms ease-out;
+    }
+    /* Sobre nosotros */
+    .titulo-nosotros {
+        width: 300px;
+        margin-right: 266px;
+    }
+    .parrafo-nosotros {
+        font-weight: 400;
+        font-size: 20px;
+        color: #757272;
+        width: 448px;
+    }
+    .imagen-equipo {
+        width: 468px;
+        height: 360px;
+        border-radius: 30px;
+    }
+    /* Beneficios */
+    .contenedor-beneficios {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 72px;
+        margin-bottom: 72px;
+    }
+    .beneficios-card { 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #CFECF2;
+        width: 416px;
+        height: 188px;
+        border-radius: 15px;
+        margin: 0px 20px 0px 0px;
+    }
+    .beneficios-card h5 {
+        display: flex;
+        margin: 16px 40px 20px 20px;
+    }
+    .parrafo-card-beneficios {
+        width: 356px;
+        font-weight: 400;
+        font-size: 20px;
+        display: flex;
+        margin: 0 40px 20px 20px;
+    }
+    .iconos-beneficios {
+        width: 32px;
+        display: flex;
+        margin: 16px 20px 20px 0;
+    }
+    .parrafo-inferior-beneficios {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        width: 948px;
+        margin: auto;
+        margin-bottom: 148px;
+    }
+    b {
+        margin: 0 8px 0 8px;
+    }
+    /* Medios de pago */
+    .contenedor-cards {
+        width: 924px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 148px;
+    }
+    .contenedor-medios {
+        background-color: white;
+        border: 4px solid #CEECF2;
+        border-radius: 15px;
+        width: 416px;
+        height: 188px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: baseline;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .titulo-medios {
+        padding: 12px;
+        margin-bottom: 16px;
+        width: 348px;
+        text-align: center;
+    }
+    .logo-transferencia {
+        width: 84px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .logo-mercadopago {
+        width: 217px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .logo-mastercard {
+        width: 86px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .logo-visa {
+        width: 123px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .logo-pago-facil {
+        width: 74px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .logo-rapipago {
+        width: 173px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    /* Footer */
     footer {
         background-color: #CEECF2;
         width: 100%;
@@ -1136,7 +1130,214 @@ p {
         justify-content: space-around;
         align-items: flex-start;
     }
+    /* Página registro */
+    .nav-ayuda {
+        margin-left: 640px;
+    }
+    .registro-contenedor-big {
+        background-color: white;
+        width: 1244px;
+        height: 708px;
+        margin: auto;
+        margin-top: 116px;
+        margin-bottom: 68px;
+        border-radius: 30px;
+        z-index: 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .registro-contenedor-small {
+        width: 622px;
+        height: 708px;
+        border-radius: 30px;
+        box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.25);
+        -webkit-box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.25);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .titulo-registro {
+        font-weight: 500;
+        font-size: 42px;
+        width: 504px;
+        margin: 44px 0 4px 59px;
+    }
+    .contenedor-de-formulario {
+        width: 516px;
+        height: 672px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .formulario {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+    }
+    .label-formulario {
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .input-registro {
+        width: 244px;
+        height: 48px;
+        background-color: #EDF4F9;
+        color: #757272;
+        border-radius: 12px;
+    }
+    .requisito-contraseña {
+        font-size: 14px;
+        width: 244px;
+        margin-top: 12px;
+    }
+    .contenedor-boton-crear-cuenta {
+        width: 516px;
+        height: 48px;
+        background-color: #4E63D4;
+        color: white;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 24px;
+        border: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-redes-ingreso {
+        text-decoration: none;
+    }
+    .contenedor-facebook {
+        background-color: #395185;
+        color: white;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 20px;
+        width: 516px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo-facebook {
+        margin-left: 12px;
+    }
+    .contenedor-google {
+        background-color: #F15744;
+        color: white;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 20px;
+        width: 516px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .parrafos-inferiores-formulario {
+        text-align: center;
+    }
+    .footer-registro {
+        width: 100%;
+        height: 52px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright-registro {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: #757272;
+    }
+    .gif-cohete {
+        display: flex;
+        justify-content: center;
+        margin-left:45px;
+        width: 532px;
+    }
 }
+/* Header home */
+.header-contenedor {
+    background-color: white;
+    height: 64px;
+    width: 100%;
+    padding: 0 3% 0 3%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.header-items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-items ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 352px;
+}
+.header-items ul li {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 0 16px;
+}
+.inicio {
+    font-weight: 700;
+    color: #4E63D4;
+}
+.registro {
+    font-weight: 500;
+    color: #4E63D4;
+    padding: 8px 12px;
+    border: 2px solid #4E63D4;
+    border-radius: 8px;
+}
+.registro:hover {
+    background-color: #4E63D4;
+    border: 2px solid white;
+    color: white;
+    transition: all 300ms ease-out;
+}
+/* Fin header */
+/* Section Home */
+.fondo-home {
+    margin: 44px 3% 0 3%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CFECF2;
+    border-radius: 40px;
+    width: 1240px;
+    height: 632px;
+    z-index: -1;
+}
+/* Fin section Home */
+/* Section Buscador*/
+.icono-viajes {
+    padding-right: 8px;
+}
+/* Fin section Buscador */
+/* Footer home */
 .formulario-email {
     background-color: white;
     color: #757272;
@@ -1356,7 +1557,14 @@ p {
     justify-content: center;
 }
 /* Fin Footer Registro */
-
+.registro-iniciosesion {
+    background-color: #CFECF2;
+}
+.terminos-y-condiciones a {
+    text-decoration: none;
+    color: #4E63D4;
+}
+/* Fin Registro */
 /* Alineación de elementos */
 .elementos-en-bloque {
     display: block;
@@ -1376,3 +1584,65 @@ p {
 .alineacion-derecha {
     text-align: right;
 }
+
+
+/* Section Medios de pago con grid*/
+/* .grid-container {
+    margin-bottom: 148px;
+    display: grid;
+    grid-template-rows: 44px 64px 188px 188px;
+    grid-template-columns: 432px 432px;
+    justify-content: center;
+    column-gap: 12px;
+    row-gap: 28px;
+    grid-template-areas: 
+    "titulo titulo"
+    "subtitulo subtitulo"
+    "card1 card2"
+    "card3 card4";
+}
+.titulo-grid {
+    grid-area: titulo;
+    text-align: center;
+}
+.subtitulo-grid {
+    grid-area: subtitulo;
+    text-align: center;
+}
+.grid-container div {
+    background-color: white;
+    border: 4px solid #CEECF2;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.grid-item1 {
+    width: 416px;
+    height: 188px;
+    text-align: center;
+    grid-area: card1;
+}
+.grid-item2 {
+    width: 416px;
+    height: 188px;
+    text-align: center;
+    display: inline-block;
+    grid-area: card2;
+}
+.grid-item3 {
+    width: 416px;
+    height: 188px;
+    text-align: center;
+    display: inline-block;
+    grid-area: card3;
+}
+.grid-item4 {
+    width: 416px;
+    height: 188px;
+    text-align: center;
+    display: inline-block;
+    grid-area: card4;
+} */
+/* Fin section Medios de pago con grid */
