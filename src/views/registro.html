@@ -20,40 +20,41 @@
     <section class="registro-contenedor-big">
         <div class="registro-contenedor-small">
             <h1 class="titulo-registro">Subite al próximo viaje</h1>
-            <img src="" alt="GIF de cohete despegando">
+            <img src="../assets/img/rocket.gif" alt="GIF de cohete despegando" class="gif-cohete">
         </div>
-        <div>
-            <label class="formulario-registro" for="nombre">Nombre</label>
-            <input type="text" placeholder="Ingresá tu nombre" name="nombre">
+        <div class="contenedor-de-formulario">
+        <div class="formulario">
+            <label class="label-formulario" for="nombre">Nombre</label>
+            <input type="text" placeholder="Ingresá tu nombre" name="nombre" class="input-registro">
         </div>
-        <div>
-            <label class="formulario-registro" for="apellido">Apellido</label>
-            <input type="text" placeholder="Ingresá tu apellido" name="apellido">
+        <div class="formulario">
+            <label class="label-formulario" for="apellido">Apellido</label>
+            <input type="text" placeholder="Ingresá tu apellido" name="apellido" class="input-registro">
         </div>
-        <div>
-            <label class="formulario-registro" for="provincia">Provincia</label>
-            <input type="text" placeholder="Seleccioná una provincia" name="provincia">
+        <div class="formulario">
+            <label class="label-formulario" for="provincia">Provincia</label>
+            <input type="text" placeholder="Seleccioná una provincia" name="provincia" class="input-registro">
         </div>
-        <div>
-            <label class="formulario-registro" for="ciudad">Ciudad</label>
-            <input type="text" placeholder="Seleccioná una ciudad" name="ciudad">
+        <div class="formulario">
+            <label class="label-formulario" for="ciudad">Ciudad</label>
+            <input type="text" placeholder="Seleccioná una ciudad" name="ciudad" class="input-registro">
         </div>
-        <div>
-            <label class="formulario-registro" for="email">Email</label>
-            <input type="text" placeholder="Ingresá tu email" name="email">
+        <div class="formulario">
+            <label class="label-formulario" for="email">Email</label>
+            <input type="text" placeholder="Ingresá tu email" name="email" class="input-registro">
         </div>
-        <div>
-            <label class="formulario-registro" for="telefono">Teléfono</label>
-            <input type="text" placeholder="Número de celular sin 0 ni 15" name="telefono">
+        <div class="formulario">
+            <label class="label-formulario" for="telefono">Teléfono</label>
+            <input type="text" placeholder="Número de celular sin 0 ni 15" name="telefono" class="input-registro">
         </div>
-        <div>
-            <label class="formulario-registro" for="contraseña">Contraseña</label>
-            <input type="password" placeholder="Ingresá una contraseña" name="contraseña">
-            <p>Debe contar con más de 8 caracteres</p>
+        <div class="formulario">
+            <label class="label-formulario" for="contraseña">Contraseña</label>
+            <input type="password" placeholder="Ingresá una contraseña" name="contraseña" class="input-registro">
+            <p class="requisito-contraseña">Debe contar con más de 8 caracteres</p>
         </div>
-        <div>
-            <label class="formulario-registro" for="repetir-contraseña">Repetir contraseña</label>
-            <input type="password" placeholder="Repetí la contraseña" name="repetir-contraseña">
+        <div class="formulario">
+            <label class="label-formulario" for="repetir-contraseña">Repetir contraseña</label>
+            <input type="password" placeholder="Repetí la contraseña" name="repetir-contraseña" class="input-registro">
         </div>
         <button class="contenedor-boton-crear-cuenta">Crear cuenta</button>
         <!-- el href te llevría al registro con facebook -->
@@ -84,16 +85,18 @@
                 <span class="titulo-facebook">Registrate con Google</span>
             </div>
         </a>
-        <div>
-            <p>¿Ya tenés una cuenta?<a href="">Iniciar sesión</a></p>
+            <div class="parrafos-inferiores-formulario">
+                <p>¿Ya tenés una cuenta?<a href="">Iniciar sesión</a></p>
+                <p>Al iniciar sesión o crear una cuenta estás aceptando nuestos
+                <a href="">Términos y condiciones</a> y la
+                <a href="">Politica de privacidad</a>
+                </p>
+            </div>
         </div>
-        <p>Al iniciar sesión o crear una cuenta estás aceptando nuestos
-            <a href="">Términos y condiciones</a> y la
-            <a href="">Politica de privacidad</a>
-        </p>
     </section>
     <footer class="footer-registro">
-        <p class="copyright"><b>Copyright</b> © 2020-2021 Airvion.com. Todos los derechos reservados</p>
+        <p class="copyright-registro"><b>Copyright</b> © 2020-2021 Airvion.com. Todos los derechos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
